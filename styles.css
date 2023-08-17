@@ -1,20 +1,12 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-
-}
-
-.header-container{
-height: 100vh;
+body{
+    background-image: url(/img/photo.jpg);
+    height: 100vh;
 width: 100vw;
-background-color: rgb(48, 40, 58);
-background-image: url(./img/photo.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size:contain;
-display: flex;
+background-image: url(https://i.pinimg.com/originals/24/8e/47/248e47a848da59d73bd1b58b34b65a7c.gif);
+background-color: rgb(30, 48, 34);
+background-repeat:no-repeat;
+background-position:center;
+background-size:90%;
 flex-direction: column;
 justify-content: left;
 align-items: flex-start;
@@ -22,104 +14,10 @@ box-sizing: border-box;
 padding: 0 112px;
 position: relative;
 }
-
-h1{
-    font: 50px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
 h2{
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-.menu{
-    display: flex;
-    align-items: left;
-    justify-content: left;
-}
-
-.linkedin{
-    margin-top: 1rem;
-    display: flex;
-    background: #ffffff;
-}
-
-.linkedin{
-    text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 1rem 4rem;
-    border: 1px solid #ffffff;
-    min-width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s ease-in-out;
-}
+    position: relative;
+    border-radius: 5px;
+    padding: 0 700px 0;
 
-.github{
-    margin-top: 1rem;
-    display: flex;
-    background: #ffffff;
-}
-
-.github{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 1rem 4rem;
-    border: 1px solid #ffffff;
-    min-width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s ease-in;
-}
-
-a:hover{
-    background-color: #ffffff;
-
-}
-
-.checkbox-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.checkbox{
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 9999;
-    transition: 400ms ease-in-out;
-}
-
-.checkbox .trace{
-    width: 50px;
-    height: 50px;
-    background-color: #000000;
-    color: #ffffff;
-    position: absolute;
-    border-radius: 4px;
-    transition: 0.5s ease-in-out;
-}
-
-.checkbox .trace:nth-child(1){
-    top: 26px;
-    transform: rotate(0);
-}
-
-.checkbox .trace:nth-child(2){
-    top: 46px;
-    transform: rotate(0);
-}
-
-.checkbox .trace:nth-child(3){
-    top: 66px;
-    transform: rotate(0);
 }
