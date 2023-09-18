@@ -9,6 +9,8 @@
     <title>Portifólio</title>
 </head>
 <style>
+
+  /* aqui está a parte do estilo da pág*/
     body{
     background-color: black;
     }  
@@ -21,9 +23,29 @@
   //Primeiros comandos Js
   window.alert('Este é meu portifólio') //exibe um alerta na tela
   window.confirm('Bem vindo') //exibe um alerta de confirmação na tela  
-  window.prompt('Qual é seu nome?') //exibe um caixa de pergunta na tela  
+  
+  //faz uma comparação: se senha for correta{ loga } senao { regarrega a pág }
+  const senha = window.prompt('Qual é a senha?') //exibe um caixa de pergunta na tela  
+  if (senha != 'vini'){
+  while (senha != 'vini'){
+    window.alert('senha incorreta')
+    break;
+  }
+  location.reload(); //função recarregar pág
+}
+else{
+  window.alert('senha correta')
+}
 
+function meubotao() {
+    window.open ("https://www.github.com/fviniciusb","_blank");
+  }
+
+//importaçõe JAVASCRIPT (Bootstra)
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px 0% 0 6%; justify-content: center; background-color:#ffffff ;" >
@@ -67,8 +89,9 @@
         <div class="card-body">
           <h7 class="card-title"><b>Portifólio</b></h7>
           <p class="card-text">Este é um de meus projetos feitos</p>
-          <a href="#" class="btn btn-primary" >Ver</a>
+          <button href="#" class="btn btn-primary" onclick="meubotao()">Ver mais</button>
         </div>
       </div>
+      
 </body>
 </html>
